@@ -1,0 +1,299 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  padding: 0 auto;
+  background-color: white;
+}
+
+header {
+  border-bottom: 1.5px solid #ccc;
+  padding: 10px 0;
+}
+
+.nav,
+.contact-number,
+.number,
+.container,
+article,
+.continue-button,
+.submit-btn {
+  align-items: center;
+}
+
+.nav,
+.contact-number,
+.number,
+.container,
+article,
+.continue-button,
+.submit-btn,
+.checkbox-container {
+  display: flex;
+}
+
+.container,
+.continue-button,
+.submit-btn {
+  justify-content: center;
+}
+
+.container,
+article {
+  flex-direction: column;
+}
+
+
+.nav {
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.logo {
+  max-width: 12vw;
+  min-width: 100px;
+  height: auto;
+}
+
+.icon {
+  width: clamp(12px, 2.4vw, 18px);
+  margin: 0px 4px 0px 12px;
+}
+
+.contact {
+  text-align: right;
+}
+
+.contact,
+.number {
+  font-size: clamp(5px, 2.4vw, 15px);
+  text-decoration: none;
+  color: #428cc0;
+}
+
+.first-text,
+.second-text {
+  font-size: clamp(22px, 2.4vw, 30px);
+  color: #2c2b30;
+  letter-spacing: -1px;
+  font-weight: 800;
+  gap: 20px;
+}
+
+input,
+.container select {
+  border: 1px solid #ccc;
+}
+
+input,
+.container select,
+.continue-button,
+.submit-btn {
+  border-radius: 5px;
+}
+
+.container select {
+  font-size: clamp(8px, 2.4vw, 12px);
+}
+
+.container select,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input::placeholder {
+  color: #ccc;
+}
+
+.continue-button,
+.submit-btn {
+  background-color: #799ef7;
+  border: none;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.contact,
+.continue-button,
+.submit-btn {
+  font-weight: bold;
+}
+
+.continue-button,
+.submit-btn,
+.container select:focus option {
+  color: white;
+}
+
+.continue-button {
+  padding: 15px 20px;
+}
+
+.submit-btn,
+input,
+.container select {
+  padding: 20px;
+}
+
+.continue-button:hover,
+.submit-btn:hover {
+  background: #2049cec5;
+}
+
+.continue-button:hover,
+.container select:hover,
+.submit-btn:hover,
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover {
+  cursor: pointer;
+}
+
+.button-icon {
+  width: 27px;
+}
+
+.continue-button,
+.container select,
+.submit-btn {
+  width: clamp(100px, 80%, 300px);
+}
+
+input,
+.checkbox-container {
+  width: clamp(100px, 80%, 500px);
+}
+
+.text,
+.terms,
+.checkbox-container {
+  font-size: clamp(5px, 2.4vw, 10px);
+}
+
+.container,
+.terms {
+  text-align: center;
+}
+
+.container select:focus option {
+  background-color: rgb(71, 71, 71);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input {
+  display: block;
+  margin: 5px 0;
+}
+
+input,
+.checkbox-container {
+  background-color: #fafafa;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.checkbox-container {
+  align-items: flex-start;
+  padding: 15px 15px 25px 0;
+  margin: 20px 0 30px 0;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin: 0;
+  padding: 0;
+}
+
+.checkbox-container label,
+footer {
+  text-align: justify;
+}
+
+#errorMessage,
+#successMessage {
+  display: none;
+  font-size: 12px;
+}
+
+#errorMessage {
+  color: red;
+}
+
+#successMessage {
+  color: green;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+footer {
+  background-color: #e4e4e4d8;
+  font-size: clamp(5px, 2.4vw, 11px);
+  padding: 50px 12%;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .contact,
+  .number {
+    display: inline-flex;
+    justify-content: center;
+    white-space: nowrap;
+  }
+
+  .nav,
+  .contact,
+  .number {
+    align-items: center;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .nav {
+    text-align: center;
+  }
+
+  .nav,
+  .contact-number {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact,
+  .number {
+    display: block;
+  }
+
+  .nav,
+  .contact-number,
+  .contact,
+  .number {
+    align-items: center;
+  }
+
+  .number {
+    display: inline-flex;
+    margin-top: 8px;
+  }
+
+  .first-text {
+    font-size: clamp(17px, 2.4vw, 20px);
+  }
+
+}
